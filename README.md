@@ -93,5 +93,5 @@ https://rental-car-seven-henna.vercel.app/
 Автор
 Юрій Петрина
 
-GitHub Профіль
+https://github.com/YuraPetryna/
 https://www.linkedin.com/in/yura-petryna/
