@@ -1,0 +1,166 @@
+/* 🔧 Кастомні стилі для react-datepicker */
+
+.react-datepicker {
+  font-family: "Inter", sans-serif !important;
+  border: 1px solid #dadde1;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* М’яка тінь */
+}
+
+.react-datepicker__header {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #dadde1;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 12px 12px;
+}
+
+/* 🔠 Назви днів тижня (Пн, Вт...) */
+.react-datepicker__day-name {
+  color: #8d929a;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-top: 12px;
+}
+
+/* 📅 Назва місяця */
+.react-datepicker__current-month {
+  font-weight: 700;
+  color: #101828;
+  padding: 3px 0;
+}
+
+/* 📆 Звичайні дні місяця */
+.react-datepicker__day {
+  color: #101828;
+}
+
+/* ✅ Виділені дні: обраний, у діапазоні тощо */
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+  background-color: #3470ff;
+  color: white;
+  border-radius: 50%;
+}
+
+/* 🔄 Hover-ефект для виділених днів */
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--in-selecting-range:hover,
+.react-datepicker__day--in-range:hover {
+  background-color: #2a5fd8;
+  border-radius: 50%;
+}
+
+/* 🔳 Клавіатурна навігація */
+.react-datepicker__day--keyboard-selected {
+  background-color: #3470ff;
+  color: white;
+  border-radius: 50%;
+}
+
+/* 🔲 Дні, що не належать до поточного місяця */
+.react-datepicker__day--outside-month {
+  color: #8d929a;
+}
+
+/* 🚫 Неактивні дні */
+.react-datepicker__day--disabled {
+  color: #dadde1;
+}
+
+/* ⬅️➡️ Кнопки навігації */
+.react-datepicker__navigation {
+  top: 8px;
+  color: #3470ff;
+  border: #3470ff;
+}
+
+.react-datepicker__navigation--previous {
+  left: 16px;
+}
+
+.react-datepicker__navigation--next {
+  right: 16px;
+}
+
+/* 🔽 Стрілочки навігації */
+.react-datepicker__navigation-icon::before {
+  border-color: #3470ff;
+  border-width: 2px 2px 0 0;
+  height: 8px;
+  top: 4px;
+}
+
+/* 🌟 Hover-ефект на стрілочках */
+.react-datepicker__navigation:hover .react-datepicker__navigation-icon::before {
+  border-color: #0b44cd; /* Темніший синій на 15% */
+}
+
+/* 🖊️ Вхідне поле (інпут) */
+.react-datepicker__input-container input {
+  width: 100%;
+  height: 48px;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  color: #101828;
+}
+
+/* 🔍 Без рамки при фокусі */
+.react-datepicker__input-container input:focus {
+  outline: none;
+}
+
+/* 🧩 Додаткові класи для стилізації */
+
+.custom-calendar {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #3470ff; /* Акцент */
+}
+
+.custom-popper {
+  z-index: 9999; /* Поверх інших елементів */
+}
+
+/* 🎯 Виділені дні в діапазоні */
+.selected-day {
+  background-color: #3470ff;
+  color: white !important;
+}
+
+/* ❌ Іконка очищення поля */
+.react-datepicker__close-icon::after {
+  background-color: #3470ff;
+  color: white;
+  font-size: 16px;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+}
+
+/* 🔺 Колір стрілки-трикутника під календарем */
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
+  border-bottom-color: #3470ff !important;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle {
+  border-top-color: #3470ff !important;
+}
+
+.react-datepicker__triangle::before {
+  border-top-color: #3470ff;
+  border-bottom-color: #3470ff;
+}
+
+/* 📐 Контейнер попера (випадаючого календаря) */
+.react-datepicker-popper {
+  width: 100%;
+  max-width: 300px;
+}

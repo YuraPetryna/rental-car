@@ -1,0 +1,10 @@
+export const selectAllCars = (state) => state.cars.allCars;
+export const selectFilteredCars = (state) => state.cars.filteredCars;
+export const selectFilters = (state) => state.cars.filters;
+export const selectIsLoading = (state) => state.cars.isLoading;
+export const selectError = (state) => state.cars.error;
+export const selectIsFilterApplied = (state) => state.cars.isFilterApplied;
+export const selectCar = (state) => state.cars.selectedCar;
+export const selectFavorites = (state) => state.favorites.items;
+export const selectCurrentPage = (state) => state.cars.currentPage;
+export const selectHasMore = (state) => state.cars.hasMore;
